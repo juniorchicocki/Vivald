@@ -1,0 +1,138 @@
+/*Novo*/
+.vivaldi {
+    top: 5px;
+    display: none;
+}
+
+#header {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -46px;
+}
+
+.tabs-top .tab-position .tab.insubstrip.active:not(.marked) {
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    border-bottom-left-radius: var(--radiusCap);
+    border-bottom-right-radius: var(--radiusCap);
+}
+
+#tabs-container .tab:not(.tab-group) {
+    border-radius: var(--radiusCap);
+}
+
+.mainbar {
+    color: var(--colorImageFg, var(--colorFg));
+    background-color: transparent;
+    margin: 2px;
+}
+
+.color-behind-tabs-off .toolbar-mainbar .toolbar-extensions,
+.color-behind-tabs-off .toolbar-mainbar .page-zoom-controls,
+.color-behind-tabs-off .toolbar-mainbar {
+    
+    color: var(--colorImageFg, var(--colorFg));
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colo rBgAlphaBlur);
+    border-radius: var(--radiusCap);
+}
+
+#browser.tabs-top #header {
+    background-color: transparent;
+    backdrop-filter: none;
+}
+
+.color-behind-tabs-off #tabs-subcontainer.top,
+.transparent-tabbar #tabs-subcontainer.top {
+    margin-left: 48px;
+    background-color: var(--colorBgAlphaBlur);
+}
+
+.color-behind-tabs-off.address-top .mainbar {
+    border: 0px;
+}
+
+.tabs-top .tab.active:not(.marked):not(.tab-mini):not(.tab-in-accordion):after,
+.tabs-top .tab.active:not(.marked):not(.tab-mini):not(.tab-in-accordion):before {
+    bottom: 0;
+    -webkit-mask-image: radial-gradient(circle at 0 0, transparent, transparent 73%);
+}
+
+#header #titlebar .window-buttongroup {
+    padding-top: 2px;
+    padding-right: 1px;
+}
+
+.toolbar-tabbar.sync-and-trash-container {
+    margin-right: 8px;
+}
+
+
+#webpage-stack {
+    display: flex;
+    flex: 1;
+    contain: strict;
+    border-radius: var(--radiusCap);
+    border: 1px solid var(--colorBorder);
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+
+#panels-container {
+    background-color: transparent;
+}
+
+#switch {
+    background-color: var(--colorBgAlphaBlur);
+    border-radius: var(--radiusCap);
+    border: 1px solid var(--colorBorder);
+  
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+.panel-group {
+    background-color: var(--colorBgAlphaHeavy);
+    border-radius: var(--radiusCap);
+    border: 1px solid var(--colorBorder);
+    
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
+
+.tracker-warning,
+.SpeedDialView-SearchField,
+.SpeedDial-Blocked-Counter {
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur);
+}
+
+.startpage .startpage-navigation {
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur);
+    box-shadow: inset 0 -2px 0 transparent;
+}
+
+:not(.tabs-bottom)#browser>footer {
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur);
+}
+
+.speeddial .dial {
+    border-radius: var(--radius);
+    backdrop-filter: var(--backgroundBlur);
+    background-color: var(--colorBgAlphaBlur);
+}
+;
+.NotesManager {
+    background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
+}
+
+.NotesManager-Note {
+    background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
+}
