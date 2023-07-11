@@ -13,39 +13,39 @@
 .tabs-top .tab-position .tab.insubstrip.active:not(.marked) {
     padding-bottom: 2px;
     margin-bottom: 0;
-    border-bottom-left-radius: var(--radiusCap);
-    border-bottom-right-radius: var(--radiusCap);
+    border-bottom-left-radius: var(--radiusHalf);
+    border-bottom-right-radius: var(--radiusHalf);
 }
 
 #tabs-container .tab:not(.tab-group) {
-    border-radius: var(--radiusCap);
+    border-radius: var(--radiusHalf);
 }
 
 .mainbar {
     color: var(--colorImageFg, var(--colorFg));
-    background-color: transparent;
-    margin: 2px;
+    background-color: var(--colorBgAlphaBlur);
+}
+
+.color-behind-tabs-off.address-top .mainbar {
+    background-color: var(--colorBgAlphaBlur);
 }
 
 .color-behind-tabs-off .toolbar-mainbar .toolbar-extensions,
 .color-behind-tabs-off .toolbar-mainbar .page-zoom-controls,
 .color-behind-tabs-off .toolbar-mainbar {
-    
+    background-color: transparent;
     color: var(--colorImageFg, var(--colorFg));
     backdrop-filter: var(--backgroundBlur);
-    background-color: var(--colo rBgAlphaBlur);
-    border-radius: var(--radiusCap);
 }
 
 #browser.tabs-top #header {
-    background-color: transparent;
-    backdrop-filter: none;
+    background-color: var(--colorBgAlphaBlur);
+    backdrop-filter: var(--backgroundBlur);
 }
 
 .color-behind-tabs-off #tabs-subcontainer.top,
 .transparent-tabbar #tabs-subcontainer.top {
     margin-left: 48px;
-    background-color: var(--colorBgAlphaBlur);
 }
 
 .color-behind-tabs-off.address-top .mainbar {
@@ -69,37 +69,50 @@
 
 
 #webpage-stack {
-    display: flex;
-    flex: 1;
-    contain: strict;
-    border-radius: var(--radiusCap);
-    border: 1px solid var(--colorBorder);
-    margin-right: 2px;
-    margin-left: 2px;
-    margin-bottom: 2px;
+    /* border-bottom-left-radius: var(--radiusHalf) ;    
+    border-top-left-radius: var(--radiusHalf) ;    */
+    /* border: 1px solid var(--colorBorder); */
+
+    /* margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 0px; */
 }
 
+browser > footer > .toolbar-statusbar {
+    border: 0px solid transparent;
+}
 
 #panels-container {
-    background-color: transparent;
+    /* background-color: transparent; */
+}
+
+#browser .tab-position .tab.active {
+    background-color: var(--colorAccentBg);
+    color: var(--colorAccentFg);
 }
 
 #switch {
-    background-color: var(--colorBgAlphaBlur);
-    border-radius: var(--radiusCap);
-    border: 1px solid var(--colorBorder);
-  
-    margin-bottom: 2px;
+    background-color: var(--colorAccentBg);
+    color: var(--colorAccentFg);
+
+    /* border-radius: var(--radiusHalf) ;     */
+    border-top-left-radius: var(--radiusHalf) ;
+    border-bottom-left-radius: var(--radiusHalf) ;    
+    /* border-right: 1px solid var(--colorBorder); */
+    /* margin-right: 2px; */
+    /* margin-bottom: 2px;  */
     margin-left: 2px;
 }
 
 .panel-group {
-    background-color: var(--colorBgAlphaHeavy);
-    border-radius: var(--radiusCap);
-    border: 1px solid var(--colorBorder);
+    /* background-color: var(--colorBgAlphaBlur); */
+    /* border-radius: var(--radiusHalf); */
+    /* border: 1px solid var(--colorBorder); */
     
-    margin-bottom: 2px;
-    margin-left: 2px;
+    /* margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px; */
 }
 
 
@@ -111,8 +124,9 @@
 }
 
 .startpage .startpage-navigation {
-    backdrop-filter: var(--backgroundBlur);
-    background-color: var(--colorBgAlphaBlur);
+    /* backdrop-filter: var(--backgroundBlur); */
+    color: var(--colorImageCenterFg);
+    background-color: transparent;
     box-shadow: inset 0 -2px 0 transparent;
 }
 
@@ -126,7 +140,7 @@
     backdrop-filter: var(--backgroundBlur);
     background-color: var(--colorBgAlphaBlur);
 }
-;
+/* 
 .NotesManager {
     background-color: var(--colorBgAlphaBlur);
     backdrop-filter: var(--backgroundBlur);
@@ -135,4 +149,4 @@
 .NotesManager-Note {
     background-color: var(--colorBgAlphaBlur);
     backdrop-filter: var(--backgroundBlur);
-}
+} */
