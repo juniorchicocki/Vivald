@@ -1,7 +1,7 @@
 /*Novo*/
 .vivaldi {
     top: 5px;
-    display: none;
+    /* display: none; */
 }
 
 #header {
@@ -69,14 +69,14 @@
 
 
 #webpage-stack {
-    /* border-bottom-left-radius: var(--radiusHalf) ;    
-    border-top-left-radius: var(--radiusHalf) ;    */
-    /* border: 1px solid var(--colorBorder); */
-
-    /* margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 1px;
-    margin-right: 0px; */
+    border-bottom-left-radius: var(--radiusHalf) ;    
+    border-top-left-radius: var(--radiusHalf) ;   
+    border: 5px solid var(--colorBgAlphaBlur);
+    /* background-color: var(--colorBgAlphaBlur); */
+    /* margin-top: 1px; */
+    /* margin-bottom: 1px; */
+    margin-left: -5px;
+    /* margin-right: 0px; */
 }
 
 browser > footer > .toolbar-statusbar {
@@ -93,16 +93,16 @@ browser > footer > .toolbar-statusbar {
 }
 
 #switch {
-    background-color: var(--colorAccentBg);
-    color: var(--colorAccentFg);
+    background-color: transparent;
+    /* color: var(--colorAccentFg); */
 
     /* border-radius: var(--radiusHalf) ;     */
-    border-top-left-radius: var(--radiusHalf) ;
-    border-bottom-left-radius: var(--radiusHalf) ;    
+    /* border-top-left-radius: var(--radiusHalf) ; */
+    /* border-bottom-left-radius: var(--radiusHalf) ;     */
     /* border-right: 1px solid var(--colorBorder); */
     /* margin-right: 2px; */
     /* margin-bottom: 2px;  */
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 
 .panel-group {
